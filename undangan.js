@@ -1,6 +1,5 @@
-const musik = new Audio(); musik.src = "Perahu-Kertas.mp3";
+const musik = new Audio(); musik.src = "musik.mp3";
 musik.loop = true;
-
 let on = document.querySelector('.volume-on');
 let off = document.querySelector('.volume-off');
 
