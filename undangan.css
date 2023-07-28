@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+nav {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+}
+
+nav main {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+}
+
+nav main .bungkus {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+
+}
+
+nav main .bungkus-1 {
+    display: flex;
+    justify-content: start;
+}
+
+nav main .bungkus-1 .speaker {
+    cursor: pointer;
+}
+
+.volume-off {
+    display: none;
+}
+
+.volume-off.toggle {
+    display: block;
+}
+
+.volume-on {
+    display: block;
+}
+
+.volume-on.toggle {
+    display: none;
+}
+
+.bungkus-2 {
+    background-color: #ff007748;
+}
+
+nav main a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 80%;
+    margin-left: .1rem;
+    border-radius: 15px;
+    /* background-color: rgba(153, 153, 153, 0.8); */
+    font-size: .8rem;
+    color: #1a1a1a;
+
+}
+
+nav main .span:hover {
+    opacity: .9;
+
+}
+
+nav main .span::before {
+    width: 100%;
+    height: 1.5rem;
+    padding: .5rem;
+}
+
+nav main .span:hover:before {
+    content: attr(data-text);
+    position: absolute;
+    text-align: center;
+    height: 1rem;
+    background-color: #222;
+    color: #ffff;
+    top: -2rem;
+}
+
+nav main .speaker {
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+
+.invitation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.invitation .invite {
+    width: 75%;
+    height: 85%;
+    padding: 5%;
+
+}
+
+.invitation .invite figure {
+    padding-top: 5%;
+    width: 70%;
+    height: 25vh;
+    margin-top: 1rem;
+    border-radius: 100%;
+    border: 2px solid #2222;
+}
+
+.invitation .invite figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.invitation .invite .h1-2 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #AF7D19;
+}
+
+.invitation .invite .box {
+    font-weight: 700;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    justify-content: center;
+}
+
+.invitation .invite .box .box-border {
+    padding: 6px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.invitation .invite .box .box-border2 {
+    margin-left: 1rem;
+}
+
+.dua {
+    width: 100%;
+    height: 30vh;
+    border-top: 2px solid #AF7D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxbb {
+    width: 80%;
+}
+
+.tiga {
+    width: 100%;
+    height: 100vh;
+    border-top: 2px solid #AF7D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto-w {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0%);
+}
+
+.foto-w.perempuan {
+    background-image: url('ahli hipnotis.png');
+    background-size: 150px;
+}
+
+.foto-w.laki {
+    background-image: url('akhi.png');
+    background-size: 150px;
+}
+
+.empat {
+    width: 100%;
+    height: 75vh;
+    border-top: 2px solid #AF7D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empat .title {
+    width: 80%;
+    height: 85%;
+    border-radius: 15%;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 10%);
+
+}
+
+.empat .title .img {
+    height: 45%;
+    background-image: url("chain.webp");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+
+}
+
+.empat .title .text {
+    text-align: center;
+    padding: .5rem;
+}
+
+.empat .title .text h1 {
+
+    font-size: 1.7rem;
+    margin-top: 1rem;
+
+}
+
+.empat .title .text p {
+    padding-top: .1rem;
+    font-size: 1rem;
+
+}
+
+.invitation .invite .countdown {
+    margin-top: 2rem;
+}
+
+.invitation .invite .countdown .time-selection {
+  
+    padding: 1rem;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown .time-selection {
+    display: inline-block;
+    box-shadow: 2px 2px 2px  #AF7D19;
+    border: 1px outset white;
+    border-style: outset;
+    padding: .3rem;
+    margin-left: .5rem;
+    text-align: center;
+    background-color: #AF7D19;
+    color: whitesmoke;
+
+}
+
+.lima {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    border-top: 2px solid #AF7D19;
+    background-color: crimson;
+}
+
+.lima .akad {
+    width: 80%;
+    height: 80%;
+
+    color: #b48c3c;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lima .akad .judul {
+    font-family: 'Alex Brush', cursive;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+   
+}
+
+.lima .akad .box,
+.lima .akad .box-2  {
+    border-radius: 15px;
+    padding-top: .1rem;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #222;
+    height: 50%;
+    text-align: center;
+    box-shadow: 5px 5px 5px #222;
+
+}
+
+.lima .akad .box .bot,.lima .akad .box-2 .bot {
+    margin-left: 8%;
+    font-weight: 700;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.lima .akad .box .bot .bot-border:nth-child(1),
+.lima .akad .box-2 .bot .bot-border:nth-child(1) {
+    padding: 1.5rem 1rem;
+    border-right: 2px solid #b48c3c;
+}
+
+.lima .akad .box .bot .bot-border:nth-child(3),
+.lima .akad .box-2 .bot .bot-border:nth-child(3)  {
+    padding: 1.5rem 1rem;
+    border-left: 2px solid #b48c3c;
+}
+
+.lima .akad .box .bot .bot-border2 ,
+.lima .akad .box-2 .bot .bot-border2 {
+    margin-left: 1rem;
+}
+.lima .akad .box-2 button{
+    background-color: #AF7D19;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    padding: .5rem .8rem;
+    margin-top: 1%;
+    border-radius: 5px;
+    z-index: 5px;
+}
+.enam{
+    width: 100%;
+    height: 100vh;
+    
+}
