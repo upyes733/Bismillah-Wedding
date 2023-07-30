@@ -232,6 +232,7 @@ nav main .speaker {
 .empat .title .text {
     text-align: center;
     padding: .5rem;
+
 }
 
 .empat .title .text h1 {
@@ -243,7 +244,7 @@ nav main .speaker {
 
 .empat .title .text p {
     padding-top: .1rem;
-    font-size: 1rem;
+    font-size: .9rem;
 
 }
 
@@ -297,9 +298,9 @@ nav main .speaker {
     font-family: 'Alex Brush', cursive;
     text-align: center;
     font-size: 2rem;
-    margin-top: 1rem;
-
+    margin-top: 2rem;
 }
+
 
 .lima .akad .box,
 .lima .akad .box-2 {
@@ -307,9 +308,9 @@ nav main .speaker {
     padding-top: .1rem;
     margin-top: 1rem;
     margin-left: 1rem ;
-    width: 90%;
+    width: 91%;
     background-color: #222;
-    height: 46%;
+    height: 45%;
     text-align: center;
     box-shadow: 5px 5px 5px #222;
 
