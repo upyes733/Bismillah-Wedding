@@ -11,9 +11,11 @@
     scroll-behavior: smooth;
 
 }
-body{
+
+body {
     position: relative;
 }
+
 nav {
     width: 100%;
     height: 20vh;
@@ -63,7 +65,7 @@ nav main .bungkus-1 .speaker {
 }
 
 .bungkus-2 {
-    background-color: #ff007748;
+    background-color: #ECCDB448;
 }
 
 nav main a {
@@ -129,19 +131,22 @@ nav main .speaker {
     height: 25vh;
     margin-top: 1rem;
     border-radius: 100%;
-    border: 2px solid #2222;
+    box-shadow: 2px 2px 2px #222;
+    border: 2px solid whitesmoke;
+    background-image: url('image.png');
+    background-size: cover;
+
 }
 
-.invitation .invite figure img {
-    width: 100%;
-    height: 100%;
-}
+
 
 .invitation .invite .h1-2 {
     font-family: 'Alex Brush', cursive;
     font-size: 2.5rem;
     margin-top: 1rem;
     color: #AF7D19;
+    color: #FEA1A1;
+    text-shadow: 1px 3px 1px #222;
 }
 
 .invitation .invite .box {
@@ -179,7 +184,7 @@ nav main .speaker {
 
 .tiga {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     border-top: 2px solid #AF7D19;
     display: flex;
     justify-content: center;
@@ -210,9 +215,11 @@ nav main .speaker {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .empat .title {
+    transform: scale(.8);
     width: 80%;
     height: 85%;
     border-radius: 15%;
@@ -232,19 +239,18 @@ nav main .speaker {
 .empat .title .text {
     text-align: center;
     padding: .5rem;
-
 }
 
 .empat .title .text h1 {
 
     font-size: 1.7rem;
-    margin-top: 1rem;
+    margin-top: .7rem;
 
 }
 
 .empat .title .text p {
-    padding-top: .1rem;
-    font-size: .9rem;
+    padding-top: .2rem;
+    font-size: .95rem;
 
 }
 
@@ -265,13 +271,13 @@ nav main .speaker {
 
 .countdown .time-selection {
     display: inline-block;
-    box-shadow: 2px 2px 2px #AF7D19;
+    box-shadow: 2px 2px 2px #FEA1A1;
     border: 1px outset white;
     border-style: outset;
     padding: .3rem;
     margin-left: .5rem;
     text-align: center;
-    background-color: #AF7D19;
+    background-color: #FEA1A1;
     color: whitesmoke;
 
 }
@@ -279,7 +285,6 @@ nav main .speaker {
 .lima {
     display: flex;
     justify-content: center;
-
     width: 100%;
     height: 100vh;
     border-top: 2px solid #AF7D19;
@@ -298,21 +303,23 @@ nav main .speaker {
     font-family: 'Alex Brush', cursive;
     text-align: center;
     font-size: 2rem;
-    margin-top: 2rem;
-}
+    margin-top: 1rem;
 
+}
 
 .lima .akad .box,
 .lima .akad .box-2 {
     border-radius: 15px;
     padding-top: .1rem;
     margin-top: 1rem;
-    margin-left: 1rem ;
-    width: 91%;
-    background-color: #222;
-    height: 45%;
+    margin-left: 1rem;
+    width: 90%;
+    background-color: white;
+    height: 46%;
     text-align: center;
-    box-shadow: 5px 5px 5px #222;
+    box-shadow: -6px -6px 1px #AF7D19;
+    transform: scale(.9);
+    transition: .3s ease;
 
 }
 
@@ -350,22 +357,58 @@ nav main .speaker {
     background-color: #AF7D19;
     border: none;
     display: flex;
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
     font-weight: 800;
     padding: .5rem .8rem;
     margin-top: 2%;
     border-radius: 5px;
-    
+
 }
+
 .lima .akad .box-2 button:hover {
-    background-color: #ffff;
+    background-color: #222;
+    color: whitesmoke;
 }
 
 
 .enam {
     width: 100%;
     height: 100vh;
-    border-top: 1px solid #AF7D19;
+    border-top: 2px solid #AF7D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.enam .konten {
+    width: 75%;
+    height: 75%;
+
+    text-align: center;
+    font-weight: 300;
+    color: #FEA1A1;
+}
+
+.enam .konten h4 {
+    margin-top: 3%;
+}
+
+.enam .konten figure {
+    padding-top: 1.5rem;
+    width: 70%;
+    height: 25vh;
+    margin-top: 1rem;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px #222;
+    border: 2px solid whitesmoke;
+    background-image: url('image.png');
+    background-size: cover;
+    margin-left: 2.5rem;
+
+}
+
+.enam .konten p {
+    margin-top: 10%;
 }
