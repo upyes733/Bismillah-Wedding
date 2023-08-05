@@ -28,7 +28,7 @@ mute = () => {
 
 //  
 
-let countDate = new Date('Aug 9 2023 07:00:00').getTime();
+let countDate = new Date('Aug 19 2023 07:00:00').getTime();
 
 newYear = () => {
     let now = new Date().getTime();
