@@ -1,7 +1,9 @@
 const musik = new Audio(); musik.src = "musik.mp3";
 musik.loop = true;
+musik.play();
 let on = document.querySelector('.volume-on');
 let off = document.querySelector('.volume-off');
+
 
 on.addEventListener('click', () => {
     if (musik.play) {
@@ -25,7 +27,7 @@ mute = () => {
     off.classList.toggle('toggle');
 }
 
-//  
+// countdown
 
 let countDate = new Date('Aug 19 2023 07:00:00').getTime();
 
@@ -54,9 +56,10 @@ setInterval(function () {
     newYear();
 }, 1000);
 
-// 
+
+// dark mode
 const light = document.querySelector('.light');
-light.addEventListener('click', function(){
+light.addEventListener('click', function nyala(){
     light.classList.toggle('dark');
     const shape = document.querySelector('.shape');
     shape.classList.toggle('dark');
@@ -95,6 +98,6 @@ light.addEventListener('click', function(){
     const h2 = document.querySelector('.enam .konten h2');
     h2.classList.toggle('dark');
 
-})
+});
 
 
