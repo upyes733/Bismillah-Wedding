@@ -15,7 +15,10 @@
 body {
     position: relative;
 }
-
+body.dark{
+    background-color: #1a1a1a;
+    color: whitesmoke;
+}
 nav {
     width: 100%;
     height: 20vh;
@@ -41,7 +44,7 @@ nav main .bungkus {
 
 nav main .bungkus-1 {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 nav main .bungkus-1 .speaker {
@@ -63,9 +66,39 @@ nav main .bungkus-1 .speaker {
 .volume-on.toggle {
     display: none;
 }
+nav main .bungkus-1 .light{
+    width: 50px;
+    height: 24px;
+    border: 3px groove #222;
+    background-color: #1a1a1a;
+    margin-right: .5rem;
+    padding: .3rem;
+    transition: .3s ease-in-out;
+    transform: scale(.8);
+}
+nav main .bungkus-1 .light.dark{
+    border: 3px groove whitesmoke;
+    background-color: #fff;
+
+}
+nav main .bungkus-1 .light .shape{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+nav main .bungkus-1 .light .shape.dark{
+    background-color: #222;
+    transform: translateX(25px);
+}
+
 
 .bungkus-2 {
     background-color: #ECCDB448;
+}
+.bungkus-2.dark{
+    background-color: #AF7D1948;
 }
 
 nav main a {
@@ -80,9 +113,11 @@ nav main a {
     /* background-color: rgba(153, 153, 153, 0.8); */
     font-size: .8rem;
     color: #1a1a1a;
-
 }
+nav main a.dark{
 
+    color: white;
+}
 nav main .span:hover {
     opacity: .9;
 
@@ -137,6 +172,10 @@ nav main .speaker {
     background-size: cover;
 
 }
+.invitation .invite figure.dark{
+    box-shadow: 2px 2px 2px white;
+    border: 2px solid #1a1a1a;
+}
 
 
 
@@ -144,9 +183,12 @@ nav main .speaker {
     font-family: 'Alex Brush', cursive;
     font-size: 2.5rem;
     margin-top: 1rem;
-    color: #AF7D19;
     color: #FEA1A1;
     text-shadow: 1px 3px 1px #222;
+}
+.invitation .invite .h1-2.dark{
+    color: #b48c3c;
+    text-shadow: 1px 3px 1px white;
 }
 
 .invitation .invite .box {
@@ -164,7 +206,11 @@ nav main .speaker {
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 }
-
+.invitation .invite .box .box-border.dark{
+    padding: .5rem .5rem;
+    border-bottom: 2px solid whitesmoke;
+    border-top: 2px solid whitesmoke;
+}
 .invitation .invite .box .box-border2 {
     margin-left: 1rem;
 }
@@ -226,6 +272,10 @@ nav main .speaker {
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 10%);
 
 }
+.empat .title.dark {
+    box-shadow: 3px 3px 3px #b48c3c;
+
+}
 
 .empat .title .img {
     height: 45%;
@@ -279,9 +329,12 @@ nav main .speaker {
     text-align: center;
     background-color: #FEA1A1;
     color: whitesmoke;
-
 }
-
+.countdown .time-selection.dark {
+    background-color: #b48c3c;
+    box-shadow: 2px 2px 2px #b48c3c;
+    color: whitesmoke;
+}
 .lima {
     display: flex;
     justify-content: center;
@@ -376,7 +429,7 @@ nav main .speaker {
 .enam {
     width: 100%;
     height: 100vh;
-    border-top: 2px solid #AF7D19;
+    border-top: 2px solid #D4AF37;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,11 +441,18 @@ nav main .speaker {
 
     text-align: center;
     font-weight: 300;
-    color: #FEA1A1;
+ 
 }
 
-.enam .konten h4 {
+.enam .konten h4 ,.enam .konten h2{
     margin-top: 3%;
+    color: #FEA1A1;
+}
+.enam .konten h4.dark{
+    color: #AF7D19;
+}
+.enam .konten h2.dark{
+    color: #AF7D19;
 }
 
 .enam .konten figure {

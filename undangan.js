@@ -1,6 +1,5 @@
 const musik = new Audio(); musik.src = "musik.mp3";
 musik.loop = true;
-musik.play();
 let on = document.querySelector('.volume-on');
 let off = document.querySelector('.volume-off');
 
@@ -54,5 +53,48 @@ newYear = () => {
 setInterval(function () {
     newYear();
 }, 1000);
+
+// 
+const light = document.querySelector('.light');
+light.addEventListener('click', function(){
+    light.classList.toggle('dark');
+    const shape = document.querySelector('.shape');
+    shape.classList.toggle('dark');
+
+    const wadah = document.body;
+    wadah.classList.toggle('dark');
+
+    const shadowFigure = document.querySelector('figure');
+    shadowFigure.classList.toggle('dark');
+
+    const text = document.querySelector('.h1-2');
+    text.classList.toggle('dark');
+
+    const time = document.querySelectorAll('.time-selection');
+    for(i = 0; i < time.length; i++){
+        time[i].classList.toggle('dark');
+    }
+
+    const border1 = wadah.querySelectorAll('.box-border');
+    for(i = 0; i < border1.length; i++){
+        border1[i].classList.toggle('dark');
+    }
+
+    const shadowBox = document.querySelector('.title');
+    shadowBox.classList.toggle('dark');
+
+    const shadowBottom = document.querySelector('.bungkus-2');
+    shadowBottom.classList.toggle('dark');
+
+    const icon = document.querySelectorAll('nav main a');
+    for(i = 0; i < icon.length; i++){
+        icon[i].classList.toggle('dark');
+    }
+    const h4 = document.querySelector('.enam .konten h4');
+    h4.classList.toggle('dark');
+    const h2 = document.querySelector('.enam .konten h2');
+    h2.classList.toggle('dark');
+
+})
 
 
