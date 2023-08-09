@@ -78,6 +78,7 @@ nav main .bungkus-1 .light {
     padding: .3rem;
     transition: .3s ease-in-out;
     transform: scale(.8);
+    border-radius: 15px;
 }
 
 nav main .bungkus-1 .light.dark {
@@ -181,7 +182,7 @@ nav main .speaker {
 
 }
 
-.invitation .invite figure.dark {
+.invitation .invite figure.dark{
     box-shadow: 2px 2px 2px white;
     border: 2px solid #1a1a1a;
 }
@@ -474,7 +475,7 @@ nav main .speaker {
 }
 
 .enam .konten figure {
-    padding-top: 1.5rem;
+    padding-top: 5%;
     width: 70%;
     height: 25vh;
     margin-top: 1rem;
@@ -486,7 +487,12 @@ nav main .speaker {
     margin-left: 2.5rem;
 
 }
-
+.enam .konten figure.dark {
+   
+    box-shadow: 2px 2px 2px whitesmoke;
+    border: 2px solid #222;
+   
+}
 .enam .konten p {
     margin-top: 10%;
 }

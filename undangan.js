@@ -67,8 +67,12 @@ light.addEventListener('click', function nyala(){
     const wadah = document.body;
     wadah.classList.toggle('dark');
 
-    const shadowFigure = document.querySelector('figure');
-    shadowFigure.classList.toggle('dark');
+    const shadowFigure = document.querySelectorAll('figure');
+    for( i = 0; i < shadowFigure.length; i++){
+
+        shadowFigure[i].classList.toggle('dark');
+    }
+   
 
     const text = document.querySelector('.h1-2');
     text.classList.toggle('dark');
